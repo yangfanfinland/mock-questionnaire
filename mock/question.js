@@ -13,6 +13,23 @@ module.exports = [
         data: {
           id: Random.id(),
           title: Random.name(),
+          componentList: [
+            {
+              id: Random.id(),
+              type: 'questionTitle',
+              title: 'Title',
+              props: { text: 'One row title', level: 1, isCenter: false },
+            },
+            {
+              id: Random.id(),
+              type: 'questionInput',
+              title: 'Input box',
+              props: {
+                title: 'Input box title',
+                placeholder: 'Please input...',
+              },
+            },
+          ],
         },
       }
     },
