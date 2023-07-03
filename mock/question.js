@@ -13,6 +13,9 @@ module.exports = [
         data: {
           id: Random.id(),
           title: Random.name(),
+          desc: 'Questionnaire description',
+          js: '',
+          css: '',
           componentList: [
             {
               fe_id: Random.id(),
@@ -61,6 +64,17 @@ module.exports = [
             },
             {
               fe_id: Random.id(),
+              type: 'questionTextarea',
+              title: 'Multiple lines input',
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: 'Your hobbies',
+                placeholder: 'Please input...',
+              },
+            },
+            {
+              fe_id: Random.id(),
               type: 'questionParagraph',
               title: 'Paragraph',
               isHidden: false,
@@ -68,6 +82,39 @@ module.exports = [
               props: {
                 text: 'One row paragraph',
                 isCenter: false,
+              },
+            },
+            {
+              fe_id: Random.id(),
+              type: 'questionRadio',
+              title: 'Single selection',
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: 'Single selection title',
+                isVertical: false,
+                options: [
+                  { value: 'item1', text: 'Option1' },
+                  { value: 'item2', text: 'Option2' },
+                  { value: 'item3', text: 'Option3' },
+                ],
+                value: '',
+              },
+            },
+            {
+              fe_id: Random.id(),
+              type: 'questionCheckbox',
+              title: 'Multiple selection',
+              isHidden: false,
+              isLocked: false,
+              props: {
+                title: 'Multiple selection title',
+                isVertical: false,
+                list: [
+                  { value: 'item1', text: 'Option1', checked: false },
+                  { value: 'item2', text: 'Option2', checked: false },
+                  { value: 'item3', text: 'Option3', checked: false },
+                ],
               },
             },
           ],
