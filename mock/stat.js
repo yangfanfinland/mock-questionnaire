@@ -17,4 +17,20 @@ module.exports = [
       }
     },
   },
+  {
+    url: '/api/stat/:questionId/:componentId',
+    method: 'get',
+    response() {
+      return {
+        errno: 0,
+        data: {
+          stat: [
+            { name: 'Option1', count: 20 },
+            { name: 'Option2', count: 10 },
+            { name: 'Option3', count: 25 },
+          ],
+        },
+      }
+    },
+  },
 ]

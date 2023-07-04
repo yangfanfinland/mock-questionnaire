@@ -17,6 +17,7 @@ module.exports = [
           desc: 'Questionnaire description',
           js: '',
           css: '',
+          isDeleted: false,
           isPublished: true,
           componentList: getComponentList(),
         },

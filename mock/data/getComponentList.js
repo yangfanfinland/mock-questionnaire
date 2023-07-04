@@ -5,7 +5,7 @@ const Random = Mock.Random
 function getComponentList() {
   return [
     {
-      fe_id: Random.id(),
+      fe_id: 'c1', //Random.id(),
       type: 'questionInfo',
       title: 'Question information',
       isHidden: false,
@@ -16,7 +16,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c2', //Random.id(),
       type: 'questionTitle',
       title: 'Title',
       isHidden: false,
@@ -28,7 +28,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c3', //Random.id(),
       type: 'questionInput',
       title: 'Input box 1',
       isHidden: false,
@@ -39,7 +39,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c4', //Random.id(),
       type: 'questionInput',
       title: 'Input box 2',
       isHidden: false,
@@ -50,7 +50,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c5', //Random.id(),
       type: 'questionTextarea',
       title: 'Multiple lines input',
       isHidden: false,
@@ -61,7 +61,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c6', //Random.id(),
       type: 'questionParagraph',
       title: 'Paragraph',
       isHidden: false,
@@ -72,7 +72,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c7', //Random.id(),
       type: 'questionRadio',
       title: 'Single selection',
       isHidden: false,
@@ -89,7 +89,7 @@ function getComponentList() {
       },
     },
     {
-      fe_id: Random.id(),
+      fe_id: 'c8', //Random.id(),
       type: 'questionCheckbox',
       title: 'Multiple selection',
       isHidden: false,
